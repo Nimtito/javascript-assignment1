@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Personalized Web Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body class="bg-[#605B51] min-h-screen flex items-center justify-center">
+
+  
+  <div class="w-full max-w-lg flex flex-col items-center gap-8 px-4">
+
+
+    <section class="w-full bg-[#454040] shadow-2xl rounded-2xl p-6">
+
+      
+      <h1 class="text-[#E6F082] text-2xl font-bold text-center mb-4">
+        Personalized Web Page
+      </h1>
+      <form id="userForm" class="flex flex-col gap-4">
+        <div>
+          <label for="name" class="text-white font-semibold">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+            class="w-full mt-1 p-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
+        </div>
+
+        
+        <div>
+          <label for="age" class="text-white font-semibold">Age</label>
+          <input
+            type="number"
+            id="age"
+            placeholder="Enter your age"
+            required
+            class="w-full mt-1 p-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
+        </div>
+        <button
+          type="submit"
+          class="bg-[#E6F082] text-black font-semibold py-2 rounded-lg hover:scale-105 hover:bg-[#E6F000] transition-all duration-200"
+        >
+
+        </button>
+
+      </form>
+    </section>
+    <section
+      id="output"
+      class="w-full bg-[#454040] text-white shadow-2xl rounded-2xl p-6 hidden flex flex-col items-center gap-4"
+    >
+      <div
+        id="greeting"
+        class="text-[#E6F082] text-xl font-bold text-center"
+      ></div>
+      <div
+        id="months"
+        class="bg-[#605B51] w-full text-center py-3 rounded-lg shadow-md"
+      ></div>
+      <div
+        id="access"
+        class="bg-[#605B51] w-full text-center py-3 rounded-lg shadow-md font-semibold"
+      ></div>
+      <div
+        id="quotes"
+        class="bg-[#605B51] w-full text-center py-3 rounded-lg shadow-md space-y-2"
+      ></div>
+      <button
+        id="resetBtn"
+        class="bg-[#E6F082] text-black font-semibold py-2 px-6 rounded-lg hover:scale-105 hover:bg-[#E6F000] transition-all duration-200"
+      >
+      </button>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
