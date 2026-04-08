@@ -24,3 +24,7 @@ This is a personalized web application where the user enters their name and age,
  * HTML5
  * CSS 
  * JAVASCRIPT
+
+ ## LICENSE
+ This project is licensed under MIT license
+ 
