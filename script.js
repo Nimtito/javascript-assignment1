@@ -1,6 +1,6 @@
 console.log("Personalized Web App Started...");
 
-// ================= SELECT ELEMENTS =================
+// SELECT ELEMENTS 
 const form = document.querySelector("#userForm");
 const nameInput = document.querySelector("#name");
 const ageInput = document.querySelector("#age");
@@ -12,17 +12,17 @@ const accessDiv = document.querySelector("#access");
 const quotesDiv = document.querySelector("#quotes");
 const resetBtn = document.querySelector("#resetBtn");
 
-// ================= FUNCTION: CALCULATE AGE IN MONTHS =================
+//  FUNCTION: CALCULATE AGE IN MONTHS 
 function calculateMonths(age) {
   return age * 12;
 }
 
-// ================= FUNCTION: GREETING =================
+//FUNCTION: GREETING
 function createGreeting(name) {
-  return `Hello ${name} 👋`;
+  return `Hello ${name} `;
 }
 
-// ================= FUNCTION: AGE CHECK =================
+//  FUNCTION: AGE CHECK 
 function checkAccess(age) {
   if (age >= 18) {
     return "You can access adult content";
@@ -31,20 +31,20 @@ function checkAccess(age) {
   }
 }
 
-// ================= FUNCTION: DISPLAY QUOTES =================
+//  FUNCTION: DISPLAY QUOTE
 function showQuotes() {
   quotesDiv.innerHTML = ""; // clear previous quotes
 
-  const quote = "Keep pushing, greatness is coming 💪";
+  const quote = "Keep pushing, greatness is coming ";
 
   for (let i = 0; i < 5; i++) {
     quotesDiv.innerHTML += `<p>${quote}</p>`;
   }
 }
 
-// ================= FORM SUBMISSION =================
+//  FORM SUBMISSION 
 form.addEventListener("submit", function (event) {
-  event.preventDefault(); // stop page refresh
+  event.preventDefault(); 
 
   const name = nameInput.value.trim();
   const age = parseInt(ageInput.value);
@@ -70,7 +70,7 @@ form.addEventListener("submit", function (event) {
   showQuotes();
 });
 
-// ================= LOAD SAVED DATA ON REFRESH =================
+//  LOAD SAVED DATA ON REFRESH 
 window.addEventListener("load", function () {
   const savedName = localStorage.getItem("name");
   const savedAge = localStorage.getItem("age");
@@ -89,8 +89,8 @@ window.addEventListener("load", function () {
   }
 });
 
-// ================= RESET BUTTON =================
+// RESET BUTTON 
 resetBtn.addEventListener("click", function () {
-  localStorage.clear(); // remove saved data
-  location.reload();   // refresh page
+  localStorage.clear(); 
+  location.reload();   
 });
